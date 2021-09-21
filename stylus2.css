@@ -1,12 +1,13 @@
 <style>
  
     
-*{
+      /* Estilo de la página de inicio */
+      *{       
          margin: 0;
          padding: 0;
          box-sizing: border-box;
       }
- 
+      
       header{
         background-color: #F9F8FC ;
       }
@@ -28,10 +29,25 @@
 
      nav h4{
         font-family: 'Pacifico' bold;
-        font-size: 20px;
+        font-size: 26px;
         color: rgb(64, 46, 127);
-        margin-right: 460px;
+        margin-right: 100px;
         margin-top: 90px;
+      }
+
+      section p{
+        text-align: left;
+        margin-right: 200px;
+      }
+
+
+      /* estilo imagen seccion donante */
+      section img{
+        border-radius: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        /* display:block; */
+        /* style=float:right; */
       }
 
      #logo{
