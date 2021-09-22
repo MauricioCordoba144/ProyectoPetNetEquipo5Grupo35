@@ -12,18 +12,19 @@
 }
 
 #banner{
-    height: 40%;
+    height: 29%;
     background: orange;
 }
 
 #main{
-    height: 30%;
+    height: 39.6%;
     background: red;
 }
 
 #pie_pagina{
     height: 10%;
     background: green;
+    text-align: center;
 }
 
 #logo{
@@ -38,6 +39,7 @@
     width: 80%;
     background: purple;
     float:left;
+    text-align: center;
 }
 
 #boton_ingresar{
@@ -45,6 +47,7 @@
     width: 20%;
     background: yellow;
     float:right;
+    text-align:center;
 }
 
 #menu_navegacion{
@@ -57,4 +60,23 @@
 .articulo{
     height: 50%;
     background: pink;
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+    padding:50px;
+}
+
+li{
+    float: left;
+}
+
+a{
+    padding: 50px;
+}
+
+#imagen1{
+    height: 100%;
+    width: 100%;
 }
