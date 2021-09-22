@@ -1,0 +1,60 @@
+
+#contenedor{
+    height: 1440px;
+    width: 1290px;
+    background: aqua;
+}
+
+#cabezal{
+    height: 20%;
+    background: black;
+    
+}
+
+#banner{
+    height: 40%;
+    background: orange;
+}
+
+#main{
+    height: 30%;
+    background: red;
+}
+
+#pie_pagina{
+    height: 10%;
+    background: green;
+}
+
+#logo{
+    height: 100%;
+    width: 20%;
+    background: turquoise;
+    float:left;
+}
+
+#mensaje_logo{
+    height: 50%;
+    width: 80%;
+    background: purple;
+    float:left;
+}
+
+#boton_ingresar{
+    height: 50%;
+    width: 20%;
+    background: yellow;
+    float:right;
+}
+
+#menu_navegacion{
+    height: 50%;
+    width: 60%;
+    background: gray;
+    float: left;
+}
+
+.articulo{
+    height: 50%;
+    background: pink;
+}
