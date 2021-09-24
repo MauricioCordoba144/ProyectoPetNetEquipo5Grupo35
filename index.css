@@ -2,70 +2,134 @@
 #contenedor{
     height: 1440px;
     width: 1290px;
-    background: aqua;
+    font-family: "Arial";
+    /* background: orange; */
 }
 
 #cabezal{
     height: 20%;
-    background: black;
-    
+     
 }
 
 #banner{
     height: 29%;
-    background: orange;
+    /* background: orange; */
 }
 
 #main{
     height: 39.6%;
-    background: red;
+    /* background: red;*/
+} 
+
+#linea{
+    height: 1%;
 }
 
 #pie_pagina{
-    height: 10%;
-    background: green;
-    text-align: center;
+    height: 9.5%;
+    /* background: green; */
 }
 
 #logo{
     height: 100%;
     width: 20%;
-    background: turquoise;
+    /* background: turquoise;  */
     float:left;
 }
 
 #mensaje_logo{
     height: 50%;
     width: 80%;
-    background: purple;
+    
     float:left;
-    text-align: center;
+    margin-top: 5%;
 }
 
-#boton_ingresar{
-    height: 50%;
-    width: 20%;
-    background: yellow;
-    float:right;
+#h1prueba1{
     text-align:center;
+    font-size: 38px;
+    color: #0d10d8;
+    margin: auto;
+}
+
+#h1prueba2{
+    text-align:center;
+    font-size: 40px;
+    color: #090A0A;
+    margin: auto;
 }
 
 #menu_navegacion{
-    height: 50%;
+    height: 27.5%;
     width: 60%;
-    background: gray;
     float: left;
+    /* background: turquoise;  */
+}
+
+#boton_ingresar{
+    height: 23%;
+    width: 20%;
+    float:left;
+    
+    background: #1f74d6f3;
+    border-radius: 10%;
+    border-color: #090A0A;
+    margin-bottom: 1%;
+}
+
+#a_boton{
+    font-size: 32px;
+    color: #ffffff;
+    text-align:center;
+}
+
+#submain1{
+    height: 100%;
+    width: 50%;
+    /* background: gray; */
+    float: left;
+
+}
+
+#submain2{
+    height: 100%;
+    width: 50%;
+    /* background: gray; */
+    float: right;
+    
 }
 
 .articulo{
     height: 50%;
-    background: pink;
+    /* background: white; */
+    float: left;
+    text-align: justify;
+    font-size: 25px;
+    color: #0648A1;
+    font-family: "Arial";
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.titulo_articulo{
+    font-size: 35px;
+    text-align: center;
+    color: #0648A1;
+}
+
+.imagen_articulo{
+    height: 50%;
+    /* background: yellow; */
 }
 
 ul{
     list-style: none;
+}
+
+#pie_pagina_ul{
+    padding: 40px;
     display: inline-block;
-    padding:50px;
+
 }
 
 li{
@@ -73,10 +137,37 @@ li{
 }
 
 a{
-    padding: 50px;
+    padding: 30px;
+    font-size: 30px;
+    color: #090A0A;
 }
 
 #imagen1{
     height: 100%;
     width: 100%;
 }
+
+#sub_pie_pagina1{
+    width: 20%;
+    height: 100%;
+    background: purple;
+    text-align: center;
+    float: left;
+}
+
+#sub_pie_pagina2{
+    width: 60%;
+    height: 100%;
+    background: red;
+    text-align: center;
+    float:left;
+}
+
+#sub_pie_pagina3{
+    width: 20%;
+    height: 100%;
+    background: green;
+    text-align: center;
+    float: left;
+}
+
