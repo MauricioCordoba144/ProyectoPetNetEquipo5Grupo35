@@ -150,6 +150,13 @@
         .boton:hover{
             background-color: rgb(109, 196, 109);
         }
+        .btn{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(219, 206, 210, 0.966);
+            line-height: 1.5em;
+            margin: .5em auto;
+        }
         #imagen_main_donante{
             height: 100%;
             width: 50%;
