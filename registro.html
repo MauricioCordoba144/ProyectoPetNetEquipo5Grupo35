@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="descripcion" content="Esta pagina es de gatos">
+        <title>Registro</title>
+        <link rel="icon" href="favicon.png">
+        
+        
+        
+    </head>
+<body>
+
+    <style>
+
+        *{ /* Selectro Universal aplica para todo el forulario*/
+           margin: 10;
+           padding: 0;
+           box-sizing: border-box; 
+        }
+
+        header{
+        background-color: #F9F8FC ;
+      }
+
+      body{
+        position:static;
+        top: -20px;
+        left: -20px;
+        right: -40px;
+        bottom: -40px;
+        width: auto;
+        height: auto;
+        background-image: url(http://ginva.com/wp-content/uploads/2012/02/funny-animal-potrait-photography-16.jpg);
+        background-size: cover;
+        z-index: 0;
+    }
+           
+      nav{
+       display: flex;
+       height: 120px;
+       background-color:whitesmoke;
+       text-align: right;
+       justify-content: space-between;
+       
+     }
+
+     nav h4{
+        font-family: 'Exo', sans-serif;
+        font-size: 18px;
+        color: rgb(64, 46, 127);
+        margin-right:220px;
+        margin-top: 90px;
+      }
+
+      nav ul{
+        list-style: none;
+        display: inline-block;
+        padding:18px;
+     }
+ 
+     nav ul li{
+         float: left;
+         margin-top: 20px;
+         
+     }
+ 
+     nav ul li a {
+         color: rgb(64, 46, 127);
+         font-weight: bold;
+         text-decoration: none;
+         font-size: 20px;
+         padding: 10px;
+     }
+ 
+     nav ul li a:hover{
+        color: burlywood;
+       text-decoration:underline;
+     }
+
+        .form-register{
+            width: 400px;
+            background:;
+            padding: 30px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 8px;
+            font-family: 'Exo', sans-serif;
+            color: rgb(64, 46, 127);
+            
+        
+        }
+
+        .form-register h4{
+            font-size:20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color:blue;
+            font-family: 'Exo', sans-serif;
+        }
+
+        .control{
+            width:100%;
+            
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            border: 1px solid;
+            font-family: 'Exo', sans-serif;
+            font-size: 18px;
+            color: rgb(64, 46, 127);
+            
+
+        }
+
+        .form-register p{
+          height: 40px;
+          text-align: center;
+          font-family: 'Exo', sans-serif;
+          font-size: 16px;
+          line-height: 40px;
+        }
+
+        .form-register a{
+            color:rgb(64, 46, 127);
+            text-decoration: none;
+        }
+
+        .form-register a:hover{
+            color:rgb(64, 46, 127);
+            text-decoration: underline;
+        }
+
+        .form-register .botons{
+            width: 100%;
+            
+            font-family: 'Exo', sans-serif;
+            color: blue;
+            border-radius: 2px solid black;
+            padding: 12px;
+            font-size: 16px;
+            margin: 16px 0;
+        }
+
+        .form-register .botons:hover{
+            color:rgb(64, 46, 127);
+            text-decoration: underline;
+        }
+
+        .login input[type=button]:focus{
+            outline: none;
+            
+        }
+
+        .footer-section {
+       background-color: rgb(135, 178, 64);
+       height: 100px;
+       text-align: center;
+      }
+
+      .footer-section p{  
+          padding: 20px;  
+          color:rgb(64, 46, 127);
+          font-family:'Exo', sans-serif;
+          font-size: 16px;
+          display: inline-block;
+      }
+
+      .footer-section a{
+          color:rgb(64, 46, 127);
+          text-decoration: none;
+          text-align: justify;
+          display: inline-block;
+      }
+
+      .footer-section a:hover{
+          color: white;
+          text-decoration:underline;
+          
+      }
+
+    </style>
+
+<nav>
+    <img src="logo.jpeg" width="120" height="120" alt>
+    <h4>APADRINA una mascota que necesita un nuevo hogar</h4>
+  <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="adoptante.html"target="_blank">Adoptante</a></li>
+      <li><a href="donante.html"target="_blank">Donante</a></li>
+      <li><a href="login.html"target="_blank">Ingresar</a></li>
+      <li><a href="registro.html"target="_blank">Registrarse</a></li>
+    </ul>
+</nav>
+
+    <section class="form-register">
+        <h4>Formulario de Registro</h4>
+        <input class="control" type="text" name="Nombres" id="nombres" placeholder="Ingrese sus Nombres">
+        <input class="control" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrse sus Apellidos">
+        <input class="control" type="email" name="correo" id="Correo" placeholder="Ingrese su correo">
+        <input class="control" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</p>
+        <input class="botons"type="button" value="Registrar">
+        <p><a href="login.html">Ya tengo una cuenta</a></p>
+    </section>
+
+    
+        
+        <article class="footer-section">
+            <p>2021 Todos los derechos reservados, Adopta NO Compres</p>
+            <p><a href="Activo_Fijo_Andres_Capacitador.pdf">Politica de Privacidad </a></p>  
+        </article>
+
+</body>
+</html>
