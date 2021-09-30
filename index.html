@@ -31,15 +31,12 @@
                 <li>|</li>
                 <li><a href="page_donante.html">Donante</a></li>
                 <li>|</li>
-                <li><a href="">Nosotros</a></li>
+                <li><a href="javascript:abrir_ventana_nosotros()">Nosotros</a></li>
                 <li>|</li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="javascript:abrir_ventana_contacto()">Contacto</a></li>
             </ul>
         </div>
             
-
-
-
         <div id="banner">
             <div id="imagen_banner_donante">
                 <!-- <img src="mascota_donante01.jpg" class="center" width="627" height="310"  > -->
@@ -120,4 +117,52 @@
             </div>
         </div>
     </div>
+
+    <div id="ventana_nosotros" class="ventana">
+        <p>NOSOTROS <br> 
+           _____________________________________________ <br><br>
+           PetNet es un grupo de amigos, amantes de los 
+           animales, en especial de los peludos que les 
+           sirven de compañía a los seres humanos y 
+           promovemos la adopción y no la compra de 
+           mascotas, ni el tráfico y explotación de las mismas. <br><br>
+
+           Ayudamos a quienes no pueden tener más una 
+            mascota a su cuidado, a buscarle una nueva familia 
+            a su perro o gato, estableciendo una conexión con 
+            otras personas que desean adoptar un peludito y que 
+            están en capacidad de cuidarlo y darle todo el amor 
+            que él necesita. <br><br>
+
+            Nos interesa incentivar el amor por aquellos seres 
+            indefensos, que brindan tanto cariño a sus amos, 
+            de manera espontánea e incondicional.</p>
+
+        <div id="cerrar_ventana">
+            <a href="javascript:cerrar_ventana()"><img src="boton_cerrar.png" width="20" height="20" alt=""></a>
+        </div>
+    </div>
+
+    <div id="ventana_contacto" class="ventana">
+        <p> 
+            <img src="ventana_contacto.png" alt="">
+        </p>
+
+        <div id="cerrar_ventana">
+            <a href="javascript:cerrar_ventana()"><img src="boton_cerrar.png" width="20" height="20" alt=""></a>
+        </div>
+    </div>
+
+    <script>
+        function abrir_ventana_nosotros(){
+            document.getElementById("ventana_nosotros").style.display="block";
+        }
+        function abrir_ventana_contacto(){
+            document.getElementById("ventana_contacto").style.display="block";
+        }
+        function cerrar_ventana(){
+            document.getElementById("ventana_nosotros").style.display="none";
+            document.getElementById("ventana_contacto").style.display="none";
+        }
+    </script>
 </body>
