@@ -20,7 +20,7 @@
 
 #banner{
     height: 25%;
-    background: url("backgroundhuellas.png");
+    background: url("backgroundhuellas00.png");
      
 }
 
@@ -108,7 +108,7 @@
     /* background: white; */
     float: left;
     text-align: left;
-    font-size: 50px;
+    font-size: 45px;
     color: #0648A1;
     font-family: "Arial";
     margin-left: 1%;
