@@ -1,0 +1,251 @@
+*{
+    /* margin: 0.5px; */
+    padding: 0;
+    /* box-sizing: border-box; */
+ }
+
+#contenedor{
+    height: 1440px;
+    width: 100%;
+    font-family: "Arial";
+    border-color: blue;
+    border-style: solid;
+    /* background: orange; */
+}
+
+#cabezal{
+    height: 10%;
+     
+}
+
+#banner{
+    height: 25%;
+    background: url("backgroundhuellas00.png") ;
+}
+
+#main{
+    height: 49%;
+    
+} 
+
+#linea{
+    height: 1%;
+}
+
+#logo{
+    height: 100%;
+    width: 12.5%;
+    /* background: turquoise;  */
+    float:left;
+}
+
+#mensaje_logo{
+    height: 100%;
+    width: 87.5%;
+    float: right;
+    text-align:center;
+}
+
+#h1prueba1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(12, 12, 163);
+    font-size:xx-large;
+}
+
+#h1prueba2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(12, 12, 163);
+    font-size:large;
+}
+
+#menu_navegacion{
+    height: 5%;
+    background-color: rgb(16, 221, 221);
+    text-align: center;
+}
+
+#a_boton{
+    color: #9f07e6;
+    font-weight: 1000;
+}
+
+#submain1{
+    height: 100%;
+    width: 49%;
+    /* background: gray; */
+    float: left;
+    margin-left: 1%;
+
+}
+
+#submain2{
+    height: 100%;
+    width: 50%;
+    /* background: gray; */
+    float: right;
+}
+
+.articulo{
+    height: 50%;
+    /* background: white; */
+    float: left;
+    text-align: justify;
+    font-size: 30px;
+    color: #0648A1;
+    font-family: "Arial";
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.titulo_articulo{
+    font-size: 38px;
+    text-align: center;
+    color: #0648A1;
+    font-weight: 1000;
+}
+
+.imagen_articulo{
+    height: 40%;
+    width: 45%;
+    margin-top: 10%;
+    text-align: center;
+    float:left;
+    /* background: yellow; */
+}
+
+ul{
+    list-style: none;
+    display: inline-block;
+    padding:5px;
+}
+li{
+    float:left;
+    margin: 0em;
+    padding: 5px;
+}
+a{
+    text-decoration:dotted;
+    padding: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#imagen1{
+    height: 100%;
+    width: 100%;
+}
+
+#barra{
+    height: 1%;
+    width: 100%;
+    background-color: rgb(82, 82, 179);
+    border-radius: 0.5em;
+}
+
+#pie_pagina{
+    height: 10%;
+    width: 100%;
+    /* background-color: gray; */
+}
+
+#marca_huella{
+    height: 100%;
+    width: 15%;
+    /* background-color:bisque; */
+    float: left;
+    /* margin: 0em auto; */
+}
+
+.center{
+    margin: 1.5em auto;
+    display: block;
+    border-radius: 0.5em;
+}
+
+#menu_pie{
+    height: 100%;
+    width: 60%;
+    /* background-color:burlywood; */
+    float: left;
+    text-align: center;
+}
+
+#lista_pie{
+    margin: 3em auto;
+}
+
+#trade_mark{
+    height: 100%;
+    width: 25%;
+    /* background-color: brown; */
+    float: left;
+    text-align: center;
+        
+}
+
+#copy_right{
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+    margin: 3em;
+}
+
+    .slider{
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .slider ul{
+        display: flex;
+        padding: 0em;
+        width: 500%;
+        animation: cambio 12s infinite linear alternate;
+
+    }
+    .slider li{
+        width: 100%;
+        list-style: none;
+        margin-left: 10px;
+    }
+    .slider img{
+        width: 100%;
+    }
+    @keyframes cambio {
+        0% {margin-left: 0;}
+        16% {margin-left: 0;}
+        21% {margin-left: -100%;}
+        37% {margin-left: -100%;}
+        42% {margin-left: -200%;}
+        58% {margin-left: -200%;}
+        63% {margin-left: -300%;}
+        79% {margin-left: -300%;}
+        84% {margin-left: -400%;}
+        100% {margin-left: -400%;}
+    }
+
+
+#imagen_banner_adoptante{
+    /* background-color: cornflowerblue; */
+    text-align: center;
+    float: left;
+}
+
+.ventana{
+    background-color: rgb(102, 102, 209);
+    width: 25%;
+    color: rgb(247, 243, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: center;
+    padding: 13px;
+    min-height: 250px;
+    border-radius: 5%;
+    position: absolute;
+    left: 37%;
+    top: 25%;
+    display:none;
+
+}
+#cerrar_ventana{
+    position: absolute;
+    right: -27px;
+    top: 7px;
+}
