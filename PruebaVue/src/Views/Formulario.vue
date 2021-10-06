@@ -51,7 +51,6 @@ export default {
 #main{
     height: 74%;
     width: 100%;
-    background: red;
     float: left;
     text-align: center;
     
