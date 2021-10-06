@@ -32,6 +32,12 @@ export default new Router({
         },
 
         {
+            path: '/formulario',
+            name: 'Formulario',
+            component: () => import('./Views/Formulario.vue')
+        },
+        
+        {
             path: '/a',
             name: 'a',
             component: () => import('./Views/a.vue')

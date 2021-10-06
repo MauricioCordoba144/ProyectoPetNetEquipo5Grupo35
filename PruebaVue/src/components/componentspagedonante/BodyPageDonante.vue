@@ -28,7 +28,8 @@
                     <div class="boton"><a class="btn" href="login.html">Ingreso</a></div>
                 </div>
                 <div id="boton2">
-                    <div class="boton"><a class="btn" href="registro.html">Registro</a> </div>
+                    <!-- <div class="boton"><a class="btn" href="registro.html">Registro</a> </div> -->
+                    <div class="boton"> <router-link class="btn" to="formulario">Registro</router-link> </div>
                 </div>
             </div>
         </div>
