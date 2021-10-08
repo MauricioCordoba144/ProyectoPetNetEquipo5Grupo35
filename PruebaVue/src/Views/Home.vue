@@ -32,9 +32,9 @@ export default {
 
 <style>
 #body {
-  height: 1440px;
+  height: 100%;
   width: 100%;
-  font-family: "Arial";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-color: blue;
   border-style: solid;
 }
@@ -43,11 +43,15 @@ export default {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(12, 12, 163);
     font-size:xx-large;
+    padding-top: 2%;
+    font-weight: 1000;
 }
 
 #h1prueba2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: rgb(12, 12, 163);
-    font-size:large;
+    font-size:x-large;
+    padding-top: 1%;
+    font-weight: 650;
 }
 </style>

@@ -8,28 +8,28 @@
       <div class="slider">
         <ul>
           <li>
-            <img
+            <img id="margenimagen"
               src="../../../public/Carpeta Imagenes para GitHub (PetNet)\banner01_mascota_caja.jpg"
               height="320px"
               alt=""
             />
           </li>
           <li>
-            <img
+            <img id="margenimagen" 
               src="../../../public/Carpeta Imagenes para GitHub (PetNet)\banner02_mascotas_perro_gatos.jpg"
               height="320px"
               alt=""
             />
           </li>
           <li>
-            <img
+            <img id="margenimagen"
               src="../../../public/Carpeta Imagenes para GitHub (PetNet)\banner03_mascota_beso.jpg"
               height="320px"
               alt=""
             />
           </li>
           <li>
-            <img
+            <img id="margenimagen"
               src="../../../public/Carpeta Imagenes para GitHub (PetNet)\banner04_mascota_alegria.jpg"
               height="320px"
               alt=""
@@ -118,5 +118,9 @@ export default {};
     text-align: center;
     float: left;
     width: 50%;
+}
+
+#margenimagen{
+  margin-top: 3%;
 }
 </style>

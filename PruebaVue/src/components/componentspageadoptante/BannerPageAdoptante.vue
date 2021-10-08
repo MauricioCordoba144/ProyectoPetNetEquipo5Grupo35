@@ -4,10 +4,10 @@
                 <!-- <img src="mascota_adoptame.jpg" class="center" width="627" height="310"  > -->
                 <div class="slider">
                     <ul>
-                        <li><img src="../../../public/banner_adoptante_perro01.jpg" height= 320px alt=""></li>
-                        <li><img src="../../../public/banner_adoptante_gato01.jpg" height= 320px alt=""></li>
-                        <li><img src="../../../public/banner_adoptante_perro02.jpg" height= 320px alt=""></li>
-                        <li><img src="../../../public/banner_adoptante_gato02.jpg" height= 320px alt=""></li>
+                        <li><img id="margenimagen" src="../../../public/banner_adoptante_perro01.jpg" height= 320px alt=""></li>
+                        <li><img id="margenimagen" src="../../../public/banner_adoptante_gato01.jpg" height= 320px alt=""></li>
+                        <li><img id="margenimagen" src="../../../public/banner_adoptante_perro02.jpg" height= 320px alt=""></li>
+                        <li><img id="margenimagen" src="../../../public/banner_adoptante_gato02.jpg" height= 320px alt=""></li>
                     </ul>
                 </div>
             
@@ -69,7 +69,12 @@
         }
         #parrafo_adoptante{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 3em;
+            font-size: 3em;;
             color: rgb(12, 12, 163);
+            padding-top: 10%;
         }
+
+#margenimagen{
+  margin-top: 3%;
+}
 </style>

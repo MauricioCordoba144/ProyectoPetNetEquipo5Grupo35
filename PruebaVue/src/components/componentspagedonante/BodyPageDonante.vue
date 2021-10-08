@@ -2,18 +2,17 @@
     <div id="main_donante">
             <div id="articulo_donante">
                 <p id="parrafomain1_donante">
-                    Sufres de alergia y no la puedes tener ?<br>
-                    Sales mucho de viaje y no la puedes tener ?<br>
-                    Tienes otras mascotas y no la puedes tener ?<br>
-                    Se te acabó la paciencia y no la puedes tener ?<br>
-                    O simplemente ya se te acabó el amor por ella ?<br>
+                    ¿ Sufres de alergia y no la puedes tener ?<br>
+                    ¿ Sales mucho de viaje y no la puedes tener ?<br>
+                    ¿ Tienes otras mascotas y no la puedes tener ?<br>
+                    ¿ Se te acabó la paciencia y no la puedes tener ?<br>
+                    ¿ Simplemente ya se te acabó el amor por ella ?<br>
                 </p>
                 <p id="parrafomain2_donante">    
                     Este es el sitio que necesitas. Nosotros te ayudamos 
                     a buscar una nueva familia para tu mascota.
                 </p>
                 <p id="parrafomain3_donante">    
-                    ...<br>
                     Ingresa para que hagas seguimiento al proceso de 
                     adopción de tu mascota, o regístrate si eres un 
                     nuevo donante.
@@ -26,10 +25,12 @@
             <div id="botones">
                 <div id="boton1">
                     <div class="boton"><a class="btn" href="login.html">Ingreso</a></div>
+                    
+                
                 </div>
                 <div id="boton2">
                     <!-- <div class="boton"><a class="btn" href="registro.html">Registro</a> </div> -->
-                    <div class="boton"> <router-link class="btn" to="formulario">Registro</router-link> </div>
+                    <div class="boton"> <router-link class="btn" to="formulario">Formulario</router-link> </div>
                 </div>
             </div>
         </div>
@@ -38,7 +39,8 @@
 <style>
 #main_donante{
         height: 49%;
-        /* background-color: yellow; */
+        /* background-color: yellow;  */
+        
     }
         #articulo_donante{
             height: 80%;
@@ -71,6 +73,7 @@
             width: 50%;
             /* background-color: darkslategray; */
             float: left;
+            
         }
         #boton1{
             height: 10%;

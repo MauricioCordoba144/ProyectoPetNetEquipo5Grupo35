@@ -5,9 +5,9 @@
             </div>
             <div id="menu_pie">
                 <ul id="lista_pie">
-                    <li><a href="politica_privacidad.pdf">Política de privacidad</a></li>
-                    <li>|</li>
-                    <li><router-link to="administrador">Administrador</router-link></li>
+                    <li id="prueblist"><a href="politica_privacidad.pdf">Política de privacidad</a></li>
+                    <li id="prueblist">|</li>
+                    <li id="prueblist"><router-link to="administrador">Administrador</router-link></li>
                 </ul>
             </div>
             <div id="trade_mark">
@@ -65,8 +65,18 @@ export default {};
   text-align: center;
 }
 #copy_right {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
   color: gray;
   margin: 3em;
+}
+
+#prueblist{
+    float:left;
+    margin-top: 1.2%;
+    text-decoration:dotted;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
 }
 </style>

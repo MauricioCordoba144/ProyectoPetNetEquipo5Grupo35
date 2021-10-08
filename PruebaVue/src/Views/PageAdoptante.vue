@@ -32,9 +32,9 @@ export default {
 
 <style>
 #body {
-  height: 1440px;
+  height: 100%;
   width: 100%;
-  font-family: "Arial";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-color: blue;
   border-style: solid;
 }

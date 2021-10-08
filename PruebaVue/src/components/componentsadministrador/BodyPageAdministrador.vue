@@ -1,6 +1,9 @@
 <template>
     <div id="main">
-            <div id="submain1">
+            <VistaFormulariosAdministrador></VistaFormulariosAdministrador>
+        
+        
+            <!-- <div id="submain1">
                 <article class="articulo11">
                     <div>
                         <input type="checkbox" id="activar">
@@ -31,19 +34,34 @@
                 
                 <h1> </h1>
 
-            </div>
+            </div> -->
 
         </div>
 </template>
 
-<style>
+<script>
+import VistaFormulariosAdministrador from '../componentsadministrador/VistaFormulariosAdministrador.vue'
 
+export default {
+    components:{
+        VistaFormulariosAdministrador
+    }
+}
+
+
+</script>
+
+
+
+<style>
 #main{
     height: 49%;
     width:100%;
     float: left;
 } 
 
+
+/* 
 #submain1{
     height: 95%;
     width: 46%;
@@ -66,11 +84,11 @@
 }
 
 .articulo11{
-    height: 40%;
+    height: 60%;
     width:80%;
-    /* background: white; */
+    
     float: left;
-    font-size: 45px;
+    font-size: 40px;
     color: #0648A1;
     font-family: "Arial";
     margin-left: 1%;
@@ -79,9 +97,9 @@
 }
 
 .articulo22{
-    height: 40%;
+    height: 20%;
     width:80%;
-    
+    text-align: center;
     float: left;
     font-size: 45px;
     color: #0648A1;
@@ -94,19 +112,19 @@
 #botones4{
     height: 50%;
     width: 80%;
-    /* background-color: darkslategray; */
+    
     float: right;
     margin-left: 15%;
     margin-right: 16%;
 }
 #boton14{
     height: 10%;
-    width: 50%;
+    width: 40%;
     float: right;
 }
 #boton24{
     height: 10%;
-    width: 50%;
+    width: 40%;
     float: left;
 }
 .boton4{
@@ -123,6 +141,7 @@
     color: rgba(219, 206, 210, 0.966);
     line-height: 1.5em;
     margin: .5em auto;
+    
 }
 .boton4:hover{
     background-color: rgb(109, 196, 109);
@@ -133,6 +152,6 @@
     color: rgba(219, 206, 210, 0.966);
     line-height: 1.5em;
     margin: .5em auto;
-}
+} */
 
 </style>

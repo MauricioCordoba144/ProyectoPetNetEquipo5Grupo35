@@ -6,18 +6,18 @@
                     <h1 class="titulo_articulo1">
                         ¿ Como hacerte Donante ?
                     </h1>
-                    <p>
+                    <p class="parrafo">
                         Si tienes una mascota para adoptar, registrate en nuestro sitio e 
                         ingresa los datos de la mascota y regalale un hogar a ese dulce compañero
                     </p>
                 </article>
                     
                 <article class="articulo1">
-                    <br> <br>
+                    <br> <br> <br>
                     <h1 class="titulo_articulo1">
                         ¿ Como hacerte Adoptante ?
                     </h1>
-                    <p>
+                    <p class="parrafo">
                         Si quieres darle un hogar a una dulce compañia, registrate como 
                         adoptante y selecciona la mascota elegida, pronto nos pondremos en contacto contigo.
                     </p>
@@ -49,6 +49,7 @@
 #main{
     height: 49%;
     float: left;
+    
 } 
 
 #submain11{
@@ -70,9 +71,9 @@
     width: 100%;
     /* background: white; */
     float: left;
-    font-size: 30px;
+    font-size: 25px;
     color: #0648A1;
-    font-family: "Arial";
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 2%;
     margin-right: 2%;
     text-align: justify;
@@ -81,11 +82,12 @@
 .titulo_articulo1{
     width: 100%;
     height: 10%;
-    font-size: 38px;
+    font-size: 30px;
     text-align: center;
     color: #0648A1;
     font-weight: 1000;
     float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .imagen_articulo1{
@@ -95,5 +97,9 @@
     text-align: center;
     float:left;
     /* background: yellow; */
+}
+
+.parrafo{
+    margin-top: 10%;
 }
 </style>

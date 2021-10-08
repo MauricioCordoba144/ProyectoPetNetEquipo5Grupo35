@@ -1,15 +1,15 @@
 <template>
     <div id="menu_navegacion">
             <ul>
-                <li><router-link to="home">Home</router-link></li>
-                <li>|</li>
-                <li><router-link to="pageadoptante">Adoptante</router-link></li>
-                <li>|</li>
-                <li><router-link to="pagedonante">Donante</router-link></li>
-                <li>|</li>
-                <li><a href="javascript:abrir_ventana_nosotros()">Nosotros</a></li>
-                <li>|</li>
-                <li><a href="javascript:abrir_ventana_nosotros()">Contacto</a></li>
+                <li id="prueblist"><router-link to="home">Home</router-link></li>
+                <li id="prueblist">|</li>
+                <li id="prueblist"><router-link to="pageadoptante">Adoptante</router-link></li>
+                <li id="prueblist">|</li>
+                <li id="prueblist"><router-link to="pagedonante">Donante</router-link></li>
+                <li id="prueblist">|</li>
+                <li id="prueblist"><router-link to="formulario">Formulario</router-link></li>
+                <li id="prueblist">|</li>
+                <li id="prueblist"><a href="login.html">Ingresar</a></li>
             </ul>
       
         </div>
@@ -31,16 +31,19 @@ ul{
     padding:5px;
 }
 
-li{
+#prueblist{
     float:left;
-    margin: 0em;
+    margin-top: 1.2%;
+    text-decoration:dotted;
     padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
 }
 
 a{
     text-decoration:dotted;
     padding: 35px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 </style>

@@ -3,17 +3,19 @@
         <Cabecera></Cabecera>
         <MenuNavegacion></MenuNavegacion>
         <!-- "Main Formulario " -->
-            <div id="main">
-            <section class="form-register">
-                <h4>Formulario de Registro</h4>
-                <input class="control" type="text" name="Nombres" id="nombres" placeholder="Ingrese sus nombres">
-                <input class="control" type="text" name="Apellidos" id="Apellidos" placeholder="Ingrese sus apellidos">
-                <input class="control" type="email" name="correo" id="Correo" placeholder="Ingrese su correo">
-                <input class="control" type="text" name="direccion" id="direccion" placeholder="Ingrese su dirección">
-                <input class="control" type="text" name="celular" id="celular" placeholder="Ingrese su celular">
-                <input class="control" type="password" name="Contraseña" id="Contraseña" placeholder="Ingrese su contraseña">
-                <p>Estoy de acuerdo con <a href="terminos_condiciones.pdf">Terminos y Condiciones</a></p>
-                <input class="botons" type="button" value="Registrar">
+        <div id="main123">
+            <section class="form-register" @submit.prevent="PublicarFormulario">
+                <br> <br> <br> <br> <br> <h4>Formulario de inscripcion </h4>
+                <input class="control" type="text" placeholder="Ingrese nombres del propietario" v-model="formulario.NombreProp">
+                <input class="control" type="text" placeholder="Ingrese nombre de la mascota" v-model="formulario.NombreMasc">
+                <input class="control" type="number" placeholder="Ingrese edad de la mascota" v-model="formulario.EdadMasc">
+                <input class="control" type="text" placeholder="Ingrese direccion del propietario" v-model="formulario.direccion">
+                <input class="control" type="email" placeholder="Ingrese correo del propietario" v-model="formulario.correo">
+                <input class="control" type="text" placeholder="Ingrese celular del propietario" v-model="formulario.celular">
+                <br> <br>
+                <p id="aa">Estoy de acuerdo con: <a href="terminos_condiciones.pdf">Terminos y Condiciones</a></p>
+                <!-- <input class="botons" type="button" value="Registrar"> -->
+                <button class="botons" type="submit">Registrar formulario</button>
                 <p><a href="login.html">Ya tengo una cuenta</a></p>
             </section>
         </div>    
@@ -35,48 +37,95 @@ export default {
     MenuNavegacion,
     Barra,
     PiePagina
+    },
+
+    data() {
+        return{
+            formulario:{NombreProp:"", NombreMasc:"", EdadMasc:"", Direccion:"", Correo:"", Celular:""}
+        }
+    },
+
+    methods: {
+
+        PublicarFormulario(){
+            this.axios.post('/nuevoformulario',this.formulario)
+            .then(res=>{
+
+                this.formulario.push(res.data)
+                this.formulario.NombreProp="";
+                this.formulario.NombreMasc="";
+                this.formulario.EdadMasc="";
+                this.formulario.Direccion="";
+                this.formulario.Correo="";
+                this.formulario.Celular="";
+
+                this.mensaje.color="success";
+                this.mensaje.texto="Nota Agregada";
+                this.showAlert();
+
+            })
+            .catch(e=>{
+
+                console.log(e.response);
+
+            })
+        }
+
     }
+
+
+
 }
 </script>
 
 <style>
-#body {
-  height: 1440px;
+#body{
+  height: 100%;
   width: 100%;
-  font-family: "Arial";
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-color: blue;
   border-style: solid;
 }
 
-#main{
+#aa{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#main123{
     height: 74%;
     width: 100%;
     float: left;
     text-align: center;
-    
+    background-image: url(http://ginva.com/wp-content/uploads/2012/02/funny-animal-potrait-photography-16.jpg);
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position-x: 80%;
+    background-position-y: 50%;
 }
 
 .form-register{
 
-            width: 400px;
-            /* background:; */
-            padding: 30px;
+            width: 50%;
+            /* background: ; */
+            padding: 15px;
             margin: auto;
-            margin-top: 50px;
+            margin-top: 10%;
             margin-bottom: 50px;
             border-radius: 8px;
-            font-family: 'Exo', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: rgb(64, 46, 127);
             
         
         }
 
         .form-register h4{
-            font-size:20px;
+            font-size:40px;
             margin-bottom: 20px;
             text-align: center;
-            color:blue;
-            font-family: 'Exo', sans-serif;
+            color: rgb(0, 0, 0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
         }
 
         .control{
@@ -86,7 +135,7 @@ export default {
             border-radius: 4px;
             margin-bottom: 16px;
             border: 1px solid;
-            font-family: 'Exo', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 18px;
             color: rgb(64, 46, 127);
             
@@ -96,7 +145,7 @@ export default {
         .form-register p{
           height: 40px;
           text-align: center;
-          font-family: 'Exo', sans-serif;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           font-size: 16px;
           line-height: 40px;
         }
@@ -114,7 +163,7 @@ export default {
         .form-register .botons{
             width: 100%;
             
-            font-family: 'Exo', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: blue;
             border-radius: 2px solid black;
             padding: 12px;

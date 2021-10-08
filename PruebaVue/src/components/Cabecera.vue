@@ -29,15 +29,20 @@
             /* background-color: beige; */
             float: right;
             text-align:center;
+            
         }
         #lema1{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: rgb(12, 12, 163);
             font-size:xx-large;
+            padding-top: 2%;
+            font-weight: 1000;
         }
         #lema2{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: rgb(12, 12, 163);
-            font-size:large;
+            font-size:x-large;
+            padding-top: 1%;
+            font-weight: 650;
         }
 </style>
